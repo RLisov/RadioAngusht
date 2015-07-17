@@ -1,0 +1,65 @@
+<ion-view >
+  <ion-nav-bar class="bar bar-header bar-stable">
+      <div class="bar bar-header bar-stable main-scr">
+        <h1 class="title" id="main-scr">Радио Ангушт</h1>
+
+      </div>
+     <!--  <ion-nav-buttons side="left">
+        <a class="button  button-clear icon-more " id="recmenus" menu-toggle="left" nav-direction="back" href="#/app/records" >
+        </a>
+      </ion-nav-buttons11> -->
+    </ion-nav-bar>
+    
+    
+
+  <ion-content content scroll="false">
+      <div >
+      <div class="row padding">
+        <p class="main">сейчас:</p>
+      </div>
+      
+      <div class="row padding tail">
+        
+        <h1 class="main">{{now.title}}</h1>
+      </div>
+
+      <div class="row padding">
+        <h4 class="main">Особенности философии </br>ислама в доступном формате</h4>
+      </div>
+      <div class="shadow-wrapper">
+        <div class="padding">
+          <p class="main-white">далее:</p>
+        </div>
+
+        <div class="row main-white">
+          <div class="col col-66 main-white">{{next.title}}</div>
+          <div class="col col-33 start">{{next.start}}</div>
+        </div>
+      </div>
+
+      </div>
+      
+      
+      <div >
+        <div class="button-bar">
+          <i class=" button icon-timer" id="timer" ng-click="modal.show()"></i>
+          <i class="button icon-circle-full" ng-show="!recording" ng-click ="startRec()" id="record"></i>
+          <i class="button icon-circle--1-" id="stoprec" ng-show="recording" ng-click="stopRec()"></i>
+          <i class="button control icon-controls_stop" ng-click="stop()" ng-show="playing"></i>
+          <i class="button icon-controls_play control play" ng-click="play()" ng-show="!playing"></i>  
+          <i class="button icon-sharethis" ng-controller="ShareCtrl" ng-click="share_click()" id="share"></i>
+          <a class="button icon-playlist" id="list" href="#/app/playlist"></a>
+        </div>
+
+        <div class="item range" ng-controller="VolumeCtrl">
+    		  <i class="icon icon-vol_quiet"></i>
+    		  <input type="range"  name="volume" id="volume" ng-model="level" ng-change="levelchange()" min="0" max="100" value="66"> 
+    		  <i class="icon icon-vol_loud"></i>
+        </div>
+       
+      </div>
+      
+
+            
+  </ion-content>
+</ion-view>

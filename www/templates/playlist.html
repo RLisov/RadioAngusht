@@ -1,0 +1,43 @@
+<ion-view class="bg-sh">
+
+  <ion-nav-bar class="bar bar-header bar-stable " id="white-title" >
+      <div class="bar bar-header bar-light">
+        <h1 class="title">Программа</h1>
+      </div>
+
+      <ion-nav-buttons side="left">
+        <a class="button  button-clear ion-android-arrow-back"  href="#/app/main" >
+        </a>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+	<ion-content>
+        
+	        <div class="playlist">
+	      		<hr>
+	    	</div>
+
+        
+        	<ion-list>
+        	<ion-item ng-repeat="post in schedule" class="playlist-pad">
+        	 
+            <div class="row">
+           
+      			<div class="col col-33 time">
+      				 {{post.start}}
+      			</div> 
+
+      			<div class="col col-66 listing">
+      				{{post.title}}
+      			 </div>
+      			</div>
+
+	            <div class="playlist">
+	      			<hr>
+	    		</div>
+
+    		</ion-item>
+			</ion-list>
+
+	</ion-content>
+</ion-view>

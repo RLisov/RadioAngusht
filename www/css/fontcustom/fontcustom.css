@@ -1,0 +1,67 @@
+/*
+  Icon Font: fontcustom
+*/
+
+@font-face {
+  font-family: "fontcustom";
+  src: url("./fontcustom_5bb05556604b4e56a4c3a303d3f30997.eot");
+  src: url("./fontcustom_5bb05556604b4e56a4c3a303d3f30997.eot?#iefix") format("embedded-opentype"),
+       url("./fontcustom_5bb05556604b4e56a4c3a303d3f30997.woff") format("woff"),
+       url("./fontcustom_5bb05556604b4e56a4c3a303d3f30997.ttf") format("truetype"),
+       url("./fontcustom_5bb05556604b4e56a4c3a303d3f30997.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "fontcustom";
+    src: url("./fontcustom_5bb05556604b4e56a4c3a303d3f30997.svg#fontcustom") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-arrow395:before,
+.icon-circle--1-:before,
+.icon-circle-full:before,
+.icon-compass:before,
+.icon-controls_play:before,
+.icon-controls_stop:before,
+.icon-cross37:before,
+.icon-more:before,
+.icon-more1:before,
+.icon-playlist:before,
+.icon-sharethis:before,
+.icon-timer:before,
+.icon-vol_loud:before,
+.icon-vol_quiet:before {
+  display: inline-block;
+  font-family: "fontcustom";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-arrow395:before { content: "\f10e"; }
+.icon-circle--1-:before { content: "\f10b"; }
+.icon-circle-full:before { content: "\f10d"; }
+.icon-compass:before { content: "\f101"; }
+.icon-controls_play:before { content: "\f102"; }
+.icon-controls_stop:before { content: "\f103"; }
+.icon-cross37:before { content: "\f10f"; }
+.icon-more:before { content: "\f104"; }
+.icon-more1:before { content: "\f105"; }
+.icon-playlist:before { content: "\f106"; }
+.icon-sharethis:before { content: "\f107"; }
+.icon-timer:before { content: "\f108"; }
+.icon-vol_loud:before { content: "\f109"; }
+.icon-vol_quiet:before { content: "\f10a"; }

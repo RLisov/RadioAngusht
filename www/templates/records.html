@@ -1,0 +1,36 @@
+<ion-view class="bg-sh"  >
+
+<ion-nav-bar class="bar bar-header bar-stable" id="white-title">
+      <div class="bar bar-header bar-light">
+        <h1 class="title">Записи</h1>
+      </div>
+
+      <ion-nav-buttons side="left">
+      
+        <a class="button  button-clear ion-android-arrow-back" nav-direction="forward" href="#/app/main" >
+        </a>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+  <ion-content>
+      
+    <div class="records">
+      <hr>
+    </div>
+  	<ion-list  
+              show-delete="shouldShowDelete"
+              can-swipe="listCanSwipe">
+      <div class="records" ng-repeat="record in records">
+        <ion-item class="item-remove-animate">
+          Аудиозапись {{record.id}}
+           <ion-option-button class="button button-assertive"
+                           ng-click="removeRec($index)">
+              Удалить
+           </ion-option-button>
+        </ion-item>
+        <hr/>
+      </div>
+        
+    </ion-list>
+  </ion-content>
+</ion-view>
